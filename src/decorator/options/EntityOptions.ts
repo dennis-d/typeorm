@@ -1,4 +1,5 @@
 import {OrderByCondition} from "../../find-options/OrderByCondition";
+import {TemporalOptions} from "./TemporalOptions";
 
 /**
  * Describes all entity's options.
@@ -40,4 +41,10 @@ export interface EntityOptions {
      * By default schema synchronization is enabled for all entities.
      */
     synchronize?: boolean;
+
+    /**
+     * Provide temporal options
+    */
+
+    temporal?: TemporalOptions;
 }
